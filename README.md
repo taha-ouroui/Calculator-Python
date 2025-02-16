@@ -14,6 +14,6 @@ This is a simple calculator application built using Python and Tkinter as part o
     - Max of 19 characters on screen
 - **History Tracking**: 
     - Keeps track of previous operations and results.
-    - Displays a list of recent calculations in a separate history tab by pressing "h" to toggle between them. (Max of 16)
+    - Displays a list of recent calculations in a separate history tab by pressing (`h`) to toggle between them. (Max of (`16`))
 - **Keyboard Support**: 
     - Allows input via the keyboard, supporting number keys and operation symbols.

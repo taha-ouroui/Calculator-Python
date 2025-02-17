@@ -94,14 +94,12 @@ class app(Tk):
                 self.clearNextInsertion = False
                 
     def AddParanthesis(self) -> None:
-        open_count = self.expression.count("(")
-        close_count = self.expression.count(")")
+        openCount = self.expression.count("(")
+        closeCount = self.expression.count(")")
 
-        if open_count > close_count:
-            # if there are more open parentheses then we add a closing one
+        if openCount > closeCount: # if there are more open parentheses then we add a closing one
             self.SetEntryText(self.expression + ")")
-        else:
-            # else, add an opening parenthesis
+        else: # else, add an opening parenthesis
             self.SetEntryText(self.expression + "(")
             
     def CalculateOperation(self) -> None:
@@ -142,7 +140,7 @@ class app(Tk):
             case _:
                 self.OnButtonClick(event.char.lower())
                 
-    def ToggleTab(self):
+    def ToggleTab(self) -> None:
         if self.currentTab == self.calcTab:
             self.calcTab.grid_forget()
             self.historyTab.grid(row = 0, column = 0, columnspan = 4, sticky = "nsew")
